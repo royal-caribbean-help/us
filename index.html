@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Royal™ Caribbean® Helpline™ | +18443110974</title>
+    <meta name="description" content="The Royal Caribbean Helpline is your go-to for quick, reliable cruise support. Get help with reservations, itinerary changes, onboard services, and more—anytime, anywhere.">
+    <style>
+        /* Reset and base styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+        
+        body {
+            line-height: 1.6;
+            color: #333;
+            background-color: #f9f9f9;
+        }
+        
+        /* Header styles */
+        header {
+            background: linear-gradient(135deg, #3498db, #2c3e50);
+            color: white;
+            padding: 1rem 0;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        
+        .header-container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+        }
+        
+        .logo span {
+            color: #f1c40f;
+        }
+        
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+        
+        nav ul li {
+            margin-left: 2rem;
+        }
+        
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+            padding: 0.5rem 0;
+        }
+        
+        nav ul li a:hover {
+            color: #f1c40f;
+            border-bottom: 2px solid #f1c40f;
+        }
+        
+        /* Main content styles */
+        main {
+            min-height: 80vh;
+            padding: 2rem 0;
+        }
+        
+        .hero {
+            text-align: center;
+            padding: 4rem 0;
+            background: url('https://via.placeholder.com/1920x600') no-repeat center center/cover;
+            color: white;
+            position: relative;
+        }
+        
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.6);
+        }
+        
+        .hero-content {
+            position: relative;
+            z-index: 1;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+        
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+        }
+        
+        .btn {
+            display: inline-block;
+            background: #f1c40f;
+            color: #333;
+            padding: 0.8rem 1.5rem;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: all 0.3s;
+        }
+        
+        .btn:hover {
+            background: #e67e22;
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+        
+        .features {
+            padding: 4rem 0;
+            background: white;
+        }
+        
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        
+        .section-title h2 {
+            font-size: 2.5rem;
+            color: #2c3e50;
+        }
+        
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+        
+        .feature-card {
+            background: #f9f9f9;
+            padding: 2rem;
+            border-radius: 8px;
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+        
+        .feature-icon {
+            font-size: 2.5rem;
+            color: #3498db;
+            margin-bottom: 1rem;
+        }
+        
+        .feature-card h3 {
+            margin-bottom: 1rem;
+            color: #2c3e50;
+        }
+        
+        /* Footer styles */
+        footer {
+            background: #2c3e50;
+            color: white;
+            padding: 3rem 0 1rem;
+        }
+        
+        .footer-container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+        
+        .footer-column h3 {
+            font-size: 1.3rem;
+            margin-bottom: 1.5rem;
+            position: relative;
+            padding-bottom: 0.5rem;
+        }
+        
+        .footer-column h3::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 50px;
+            height: 2px;
+            background: #f1c40f;
+        }
+        
+        .footer-column ul {
+            list-style: none;
+        }
+        
+        .footer-column ul li {
+            margin-bottom: 0.8rem;
+        }
+        
+        .footer-column ul li a {
+            color: #ecf0f1;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        
+        .footer-column ul li a:hover {
+            color: #f1c40f;
+        }
+        
+        .social-links {
+            display: flex;
+            gap: 1rem;
+        }
+        
+        .social-links a {
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            background: #34495e;
+            color: white;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 40px;
+            transition: all 0.3s;
+        }
+        
+        .social-links a:hover {
+            background: #f1c40f;
+            transform: translateY(-3px);
+        }
+        
+        .copyright {
+            text-align: center;
+            padding-top: 2rem;
+            margin-top: 2rem;
+            border-top: 1px solid #34495e;
+            font-size: 0.9rem;
+            color: #bdc3c7;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="header-container">
+            <div class="logo">Royal<span>Caribbean</span></div>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Royal Caribbean support just a call away! Reach us at +1 (844) 311-0974. 🌊</h1>
+                <p>Royal Caribbean Helpline - Your 24/7 cruise support! Get answers fast from our expert travel assistants. Smooth sailing ahead! ⚓</p>
+                <a href="#" class="btn">Book Now</a>
+            </div>
+        </section>
+        
+        <!-- Features Section -->
+        <section class="features">
+            <div class="container">
+                <div class="section-title">
+                   <img src="https://i.postimg.cc/65wTdc85/caribbean.png" alt="Royal" width="100%" height="100%">
+                </div>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">📱</div>
+                        <h3>How the Royal Caribbean Helpline Helped Me Book the Cruise of a Lifetime</h3>
+                        <p class="" data-start="2326" data-end="2692">If you&rsquo;re anything like me, you probably love the <em data-start="2376" data-end="2382">idea</em> of a cruise&mdash;but hate all the planning that comes with it. I recently booked a Royal Caribbean cruise for the first time, and honestly? I had no clue what I was doing. From cabin types to excursions, the options were endless. I felt stuck&hellip; until I found the <strong data-start="2640" data-end="2668">Royal Caribbean Helpline</strong> at <strong data-start="2672" data-end="2691">+1-844-311-0974</strong>.</p>
+<h3 class="" data-start="2694" data-end="2725">One Call Changed Everything</h3>
+<p class="" data-start="2727" data-end="2804">I was connected with a rep named Rachel, who asked me a few simple questions:</p>
+<ul data-start="2806" data-end="2956">
+<li class="" data-start="2806" data-end="2839">
+<p class="" data-start="2808" data-end="2839">How long do you want to cruise?</p>
+</li>
+<li class="" data-start="2840" data-end="2868">
+<p class="" data-start="2842" data-end="2868">What&rsquo;s your travel budget?</p>
+</li>
+<li class="" data-start="2869" data-end="2893">
+<p class="" data-start="2871" data-end="2893">Are you bringing kids?</p>
+</li>
+<li class="" data-start="2894" data-end="2956">
+<p class="" data-start="2896" data-end="2956">What are you most excited about&mdash;relaxing, sightseeing, food?</p>
+</li>
+</ul>
+<p class="" data-start="2958" data-end="3117">Within 20 minutes, Rachel had mapped out a 5-night Caribbean cruise that checked all the boxes: beach days, gourmet dining, and tons of activities for my kids.</p>
+<h3 class="" data-start="3119" data-end="3145">Rachel Helped Me With:</h3>
+<ul data-start="3147" data-end="3389">
+<li class="" data-start="3147" data-end="3208">
+<p class="" data-start="3149" data-end="3208">Booking a spacious family stateroom near the adventure zone</p>
+</li>
+<li class="" data-start="3209" data-end="3266">
+<p class="" data-start="3211" data-end="3266">Reserving a private beach cabana on our stop in Labadee</p>
+</li>
+<li class="" data-start="3267" data-end="3333">
+<p class="" data-start="3269" data-end="3333">Signing us up for the Ultimate Dining Package (totally worth it)</p>
+</li>
+<li class="" data-start="3334" data-end="3389">
+<p class="" data-start="3336" data-end="3389">Applying a promo that saved me $200 in onboard credit</p>
+</li>
+</ul>
+<p class="" data-start="3391" data-end="3499">She even emailed me a checklist with packing tips, travel documents, and how to use the Royal Caribbean app.</p>
+<h3 class="" data-start="3501" data-end="3533">Why I Recommend the Helpline</h3>
+<p class="" data-start="3535" data-end="3853">I could have figured this all out on my own, sure. But I would&rsquo;ve spent hours doing it&mdash;and missed out on some great perks. Instead, I got a personalized experience and full peace of mind. If you&rsquo;re planning a cruise, just <strong data-start="3757" data-end="3813">call the Royal Caribbean Helpline at +1-844-311-0974</strong>. It&rsquo;s fast, free, and totally worth it.</p>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-column">
+                <h3>About Us</h3>
+                <p>Royal Caribbean Helpline - Your direct connection to cruise experts! Get trip help, booking support & travel advice anytime.</p>
+            </div>
+            <div class="footer-column">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            
+           
+            </div>
+      
+        <div class="copyright">
+            <p>&copy; 2025 Royal Caribbean. All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
